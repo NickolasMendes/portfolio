@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 60px;
+    scroll-padding-top: 200px;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: #11212D;
+    background-color: #0E1211;
     color: #f8f9fa;
     transition: background-color 0.5s;
     overflow-x: hidden;
@@ -21,20 +21,15 @@ a {
   }
 
 
-::selection {
-    background-color: #007bff;
-    color: #fff;
-}
-
 header {
-    background: #253745;
+    background: #15251D;
     color: #fff;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 0px #4a934e;
     transition: background-color 0.5s;
 }
 
@@ -58,7 +53,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #12e21d;
 }
 
 
@@ -71,17 +66,21 @@ section {
     margin-bottom: 10rem;
 }
 
+section h1 {
+    margin-bottom: 20px;
+}
 
 
 
 
 
 
-/* ------------------- SOBRE --------------------- */
+
+/* ------------------- Sobre --------------------- */
 
 .home {
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 160px;
     display: flex;
     padding: 2.5rem;
     gap: 200px;
@@ -89,10 +88,11 @@ section {
 
 .perfil img {
     border-radius: 50%;
-    width: 500px; /* Tamanho da imagem ajustado */
-    height: 500px; /* Tamanho da imagem ajustado */
+    width: 550px; 
+    height: 550px; 
+    margin-right: 100px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 5px 0px 0px #0dbd16;
     transition: transform 0.3s;
 }
 
@@ -100,25 +100,34 @@ section {
     margin: auto 0;
 }
 
-.welcome h1{
-    margin-bottom: 0;
-    font-size: 4rem;
-    font-weight: normal;
-}
-
 .welcome h2 {
-    margin-top: 10px;
-    margin-bottom: 4.5rem;
+    margin: 8rem auto 0;
     font-weight: normal;
     font-size: 3.5rem;
     transition: color 0.3s;
     
 }
 
+.welcome h1{
+    margin: 0 auto 8rem;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+
+
 .welcome p{
     font-size: 1.5rem;
     font-weight: normal;
     margin: 0;
+    text-decoration:underline #12e21d;
+}
+
+.green {
+    color: #0dbd16;
+}
+.underline {
+    text-decoration:underline #12e21d;
 }
 
 .welcome .social-icons a {
@@ -129,20 +138,30 @@ section {
 }
 
 .welcome .social-icons a:hover {
-    color: #1e90ff;
+    color: #12e21d;
 }
 
 
+
+
+
+/* ------------------- Descrição --------------------- */
+
+
 .descricao {
-    max-width: 600px;
+    max-width: 900px;
     width: 100%;
-    margin: -5rem auto 15rem;
+    margin: 14rem auto 15rem;
     transition: transform 0.3s;
+}
+
+.descricao h2 {
+    margin: 0 auto 4rem;
 }
 
 .descricao p {
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     transition: color 0.3s;
 }
 
@@ -155,60 +174,48 @@ section {
 
 
 
-
+/* ------------------- Experiencia --------------------- */
 
 
 .experiencia-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: auto auto auto;
     gap: 2rem;
 }
 
-.experiencia {
+.experiencia-text {
     background-color: #f3f3f3;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: -10px 8px 0px rgb(16 42 49);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: -10px 8px 0px #15251D;
     position: relative;
     overflow: hidden;
 }
 
-.experiencia:hover {
-    transform: translateY(-10px);
-    box-shadow: -10px 8px 0px rgb(10, 19, 22);
+.experiencia-text:hover {
+    box-shadow: -10px 8px 0px #12e21d;
 }
 
-.experiencia img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
 
-.experiencia:hover img {
-    opacity: 0.7;
-}
-
-.experiencia h3 {
+.experiencia-text h3 {
     color: #f8f9fa; /* Cor do texto ajustada */
     margin-bottom: 1rem;
     font-size: 1.5rem;
     transition: color 0.3s;
 }
 
-.experiencia p,
+.experiencia-text:hover h3 {
+    color: #12e21d;
+}
+
+.experiencia-text p,
 .projeto p {
     color: #343a40; /* Cor do texto ajustada */
     line-height: 1.6;
     transition: color 0.3s;
 }
 
-.experiencia h3,
+.experiencia-text h3,
 .projeto h3 {
     color: #343a40; /* Cor do texto ajustada */
     margin-bottom: 1rem;
@@ -216,71 +223,18 @@ section {
     transition: color 0.3s;
 }
 
-.habilidades {
-    margin: 1rem 0;
-    transition: transform 0.3s;
-    display: grid;
 
-}
 
-.center {
-    display: flex;
-    justify-content: center;
-}
 
-.progress-bar {
-    background: #ddd;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 20px;
-    width: 80%;
-    margin-top: 0.5rem;
-    margin-bottom: 4rem;
-    transition: background-color 8s;
-}
 
-.progress-bar span {
-    display: block;
-    height: 100%;
-    background: #007bff;
-    border-radius: 20px;
-    transition: width 220.3s;
-    text-align: right;
-}
 
-.progress-html {
-    animation: progress-animation-html 3s forwards;
-}
-@keyframes progress-animation-html{
-    0% { width: 0%; }
-    100% { width: 95%; }    
-}
 
-.progress-js {
-    animation: progress-animation-js 3s forwards;  
-}
-@keyframes progress-animation-js{    
-    0% { width: 0%; }
-    100% { width: 85%}
-}
 
-.progress-php {
-    animation: progress-animation-php 3s forwards;  
-}
-@keyframes progress-animation-php{    
-    0% { width: 0%; }
-    100% { width: 95%}
-}
 
-.progress-laravel {
-    animation: progress-animation-laravel 3s forwards;  
-}
-@keyframes progress-animation-laravel{    
-    0% { width: 0%; }
-    100% { width: 80%}
-}
 
-.projetos-grid {
+/* ------------------- Projeto --------------------- */
+
+.projetos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -308,21 +262,32 @@ section {
 
 }
 
-.projeto-text {
+.projeto-infos {
     padding: 2rem;
 }
 
 
-.linguagem-img {
+.linguagem-logo {
     display: flex;
     justify-content: center;
 }
 
-.linguagem-img img {
+.linguagem-logo img {
     display: flex;
     width: 35px; 
     padding: 10px;  
 }
+
+
+
+
+
+
+
+
+
+
+/* ------------------- Projeto --------------------- */
 
 #contato a {
     color: #f8f9fa; /* Cor do texto ajustada */
@@ -365,7 +330,7 @@ footer p {
         margin-right: 15px;
     }
 
-    .projetos-grid {
+    .projetos {
         padding: 0 25px 0 80px;
         margin-right: 15px;
     }

@@ -27,15 +27,15 @@
     <section>
         <div class="home" >
            
-            <div data-aos="fade-right" class="perfil" id="sobre">
-                <img src="https://cdn.discordapp.com/attachments/742479609723093046/1247880773269196903/FOTO_DE_PERFIL__BY_LANNA_background_blue_invert.png?ex=6670cc48&is=666f7ac8&hm=dd917e0079340e7603e8b3d51f4a2a6c39ec62c3b74b1b5a7c186a35fb70d5b6&" alt="Foto de exemplo">
+            <div data-aos="fade-right" class="perfil">
+                <img src="https://cdn.discordapp.com/attachments/742479609723093046/1252968276099862638/FOTO_DE_PERFIL__BY_LANNA_background_code.png?ex=66742524&is=6672d3a4&hm=88385614c0b63a3590066ff2fc4db005e5d4048372ba2f7fac7b780e764f76ee&" alt="Foto de exemplo">
             </div>   
 
             <div class="welcome">
                 <div data-aos="fade-left">
-                    <p> < Web Desenvolvedor FullStack /> </p>
-                    <h1>Olá, me chamo</h2>
-                    <h2>Nickolas Mendes de Camilis</h1>
+                    <p> <span class="green"><</span> Web Desenvolvedor FullStack <span class="green">/></span> </p>
+                    <h2>Olá, me chamo</h2>
+                    <h1 class="green">Nickolas Mendes</h1>
                 </div>
                 <div data-aos="flip-up" class="social-icons">
                     <a href="https://linkedin.com/in/nickolas-mendes/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -48,18 +48,20 @@
 
          </div>
 
-        <div class="descricao">
-            
-            <p>Seja bem-vindo ao meu mundo digital!</p>
-            <p>Sou um apaixonado por códigos e pixels, um criador incansável de soluções para a web. Desde que
+        <div class="descricao" id="sobre">
+
+            <h2 class="underline">Sobre</h2>
+
+            <p>Seja <span class="green"> bem-vindo </span> ao meu <span class="green"> MUNDO DIGITAL!</span> </p>
+            <p>Sou um apaixonado por códigos e pixels, um criador incansável de <span class="green">soluções</span> para a <span class="green">web</span>. Desde que
                 mergulhei nesse universo, encontrei minha paixão em transformar ideias em realidade digital.</p>
-            <p>Com quatro anos de experiência sólida em desenvolvimento web full-stack, mergulhei fundo no mundo do
-                PHP, Laravel, HTML, CSS e JavaScript. Cada linha de código que escrevo é uma oportunidade de criar
+            <p>Com <span class="green">quatro anos de experiência sólida</span> em desenvolvimento <span class="green">web full-stack</span>, mergulhei fundo no mundo do
+                <span class="green">PHP</span>, <span class="green">Laravel</span>, <span class="green">HTML</span>, <span class="green">CSS</span> e <span class="green">JavaScript</span>. Cada linha de código que escrevo é uma oportunidade de criar
                 algo único e impactante.</p>
             <p>Fora do mundo virtual, sou um explorador curioso, um ávido leitor e um amante da natureza. Sempre em
-                busca de novos desafios e oportunidades de aprendizado, estou pronto para enfrentar qualquer projeto
-                com entusiasmo e dedicação.</p>
-            <p>Estou aqui para fazer a diferença, uma linha de código de cada vez.</p>
+                busca de novos <span class="green">desafios e oportunidades de aprendizado</span>, estou pronto para enfrentar qualquer projeto
+                com <span class="green">entusiasmo e dedicação</span>.</p>
+            <p class="underline">Estou aqui para fazer a diferença, uma linha de código de cada vez.</p>
 
         </div>
 
@@ -71,45 +73,56 @@
 
     <section id="experiencia">
 
-        <h2>Experiência</h2>
-        <div  class="experiencia-grid">
-            <div data-aos="fade-up" class="experiencia">
+        <h2 class="underline">Experiência</h2>
+        
+        <div class="experiencia-grid">
+            <div data-aos="fade-up" class="experiencia-text">
                 <h3>HTML</h3>
                 <p>Experiência com HTML por 4 anos.</p>
             </div>
-            <div data-aos="fade-up" class="experiencia">
+            <div data-aos="fade-up" class="experiencia-text">
                 <h3>CSS</h3>
                 <p>Experiência com CSS por 4 anos.</p>
             </div>
-            <div data-aos="fade-up" class="experiencia">
+            <div data-aos="fade-up" class="experiencia-text">
                 <h3>JavaScript</h3>
                 <p>Experiência com JavaScript por 4 anos.</p>
             </div>
-            <div data-aos="fade-up" class="experiencia">
+            <div data-aos="fade-up" class="experiencia-text">
                 <h3>PHP</h3>
                 <p>Experiência com PHP por 4 anos.</p>
             </div>
-            <div data-aos="fade-up" class="experiencia">
+            <div data-aos="fade-up" class="experiencia-text">
                 <h3>Laravel</h3>
                 <p>Experiência com Laravel por 2 anos.</p>
+            </div>
+            <div data-aos="fade-up" class="experiencia-text">
+                <h3>MySql</h3>
+                <p>Experiência com MySql por 4 anos.</p>
             </div>
         </div>
     </section>
 
-    <section class="section" id="projetos">
-        <h2>Projetos</h2>
-        <div class="projetos-grid">
+
+
+
+
+    <section id="projetos">
+
+        <h2 class="underline">Projetos</h2>
+
+        <div class="projetos">
             <div data-aos="fade-up" class="projeto">
                 <div class="projeto-img">
                     <img src="https://cdn.discordapp.com/attachments/742479609723093046/1252306368610697216/image.png?ex=6671bcb1&is=66706b31&hm=b1ad3b7fb949758ebd9e78ac5d5246452fc4632ccb36351c145200ab44c6c999&">
                 </div>
-                <div class="projeto-text">
+                <div class="projeto-infos">
                     <a target="_blank" href="http://imovelguide.com.br">
                         <h3>Imovel Guide</h3>
                         <p>Site para Corretor de Imovéis.</p>
                     </a>
                     <p>Desenvolvido com: 
-                        <div class="linguagem-img"> 
+                        <div class="linguagem-logo"> 
                             <a target="_blank" href="https://html.com/document/" >
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                             </a>
@@ -135,16 +148,20 @@
                 </div>
             </div>
             <div data-aos="fade-up" class="projeto">
+                
                 <div class="projeto-img">
                     <img src="https://cdn.discordapp.com/attachments/742479609723093046/1252321881374195724/image.png?ex=6671cb23&is=667079a3&hm=0d31a0f6067f8a07df4825ce9ac5f156e28590bbde1d243a0d7aede4495dc52c&">
                 </div>
-                <div class="projeto-text">
+                
+                <div class="projeto-infos">
+                
                     <a target="_blank" href="https://striker-games.github.io/e-commerce-games/index.html">
                         <h3>Striker Games</h3>
                         <p>E-commerce de Jogos Eletrônicos</p>
                     </a>
                     <p>Desenvolvido com: 
-                        <div class="linguagem-img"> 
+                
+                        <div class="linguagem-logo"> 
                             <a target="_blank" href="https://html.com/document/" >
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                             </a>
@@ -158,24 +175,31 @@
                             </a>
 
                         </div>
-                        </p>
+                
+                    </p>
+                
                 </div>
             </div>
             <div data-aos="fade-up" class="projeto">
                 <div class="projeto-img">
                     <img src="https://cdn.discordapp.com/attachments/742479609723093046/1252310316734349362/Aguarde_Em_Breve.jpg?ex=6671c05e&is=66706ede&hm=93b7a6dfb4b6bc47ff95291216cc0c40d035e97ca43e634ac4057d508d650280&">
                 </div>
-                <div class="projeto-text">
+                <div class="projeto-infos">
                     <h3>Em Breve...</h3>
                     <p>Estou desenvolvendo...</p>
                 </div>
             </div>
         </div>
+
     </section>
    
+
+
+
+
     <section class="section" id="contato">
         
-        <h2>Contatos</h2>
+        <h2 class="underline">Contatos</h2>
         
         <div data-aos="flip-up" >
             <p>Email: <a href="mailto:nmcamilistrab@gmail.com">nmcamilistrab@gmail.com</a> </p>
