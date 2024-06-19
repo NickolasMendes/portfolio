@@ -1,3 +1,6 @@
+
+/* ------------------- Configs Site e Class Gerais --------------------- */
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 200px;
@@ -15,8 +18,6 @@ body {
     overflow-x: hidden;
 }
 
-
-/* ------------------- Configs Site e Class Gerais --------------------- */
 a {
     text-decoration: none;
 }
@@ -36,6 +37,8 @@ a {
 /* ------------------- Header --------------------- */
 
 header {
+    justify-content: center;
+    align-items: center;
     background: #15251D;
     color: #fff;
     padding: 1rem 0;
@@ -47,26 +50,39 @@ header {
     transition: background-color 0.5s;
 }
 
-nav ul {
+header a {
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: -10px;
+    margin-left: 40px;
+    display: flex;
+}
+
+header img {
+    max-height: 65px;
+}
+
+ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin-top: -30px;
+    margin-bottom: -10px;
     padding: 0;
 }
 
-nav ul li {
-    margin: 0 1rem;
+ul li {
+    margin: 0 1rem 1.8rem;
 }
 
-nav ul li a {
+ul li a {
     color: #f8f9fa; /* Cor do texto ajustada */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+ul li a:hover {
     color: #12e21d;
 }
 
@@ -81,6 +97,7 @@ section {
 }
 
 section h2 {
+    font-size: 30px;
     margin-bottom: 3rem;
 }
 
@@ -124,8 +141,6 @@ section h2 {
     font-weight: normal;
 }
 
-
-
 .welcome p{
     font-size: 1.5rem;
     font-weight: normal;
@@ -139,7 +154,7 @@ section h2 {
     color: #fff;
     margin: 0 0.5rem;
     font-size: 1.5rem;
-    transition: color 0.3s;
+    transition: all .3s ease-in-out !important;
 }
 
 .welcome .social-icons a:hover {
@@ -156,7 +171,7 @@ section h2 {
 .descricao {
     max-width: 900px;
     width: 100%;
-    margin: 14rem auto 15rem;
+    margin: 14rem auto 12.5rem;
     transition: transform 0.3s;
 }
 
@@ -165,6 +180,7 @@ section h2 {
 }
 
 .descricao p {
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 1rem;
     transition: color 0.3s;
@@ -193,6 +209,7 @@ section h2 {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: -10px 8px 0px #15251D;
+    transition: all .3s ease-in-out !important;
 }
 
 .experiencia-card:hover {
@@ -223,16 +240,19 @@ section h2 {
 /* ------------------- Projeto --------------------- */
 
 .projetos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 2rem;
 }
 
 .projeto {
     background: #f3f3f3;
     border: 1px solid #ddd;
+    height: auto;
+    margin: 0 50px 40px;
     border-radius: 10px;
     box-shadow: -10px 8px 0px #15251D;
+    transition: all .3s ease-in-out !important;
 }
 
 .projeto:hover {
@@ -287,7 +307,7 @@ section h2 {
 .contato-text a {
     color: #f8f9fa;
     font-weight: bold;
-    transition: color .3s;
+    transition: all .3s ease-in-out !important;
 }
 
 .contato-text a:hover {
@@ -302,7 +322,7 @@ section h2 {
     color: #fff;
     margin: 0 0.5rem;
     font-size: 1.4rem;
-    transition: color .3s;
+    transition: all .3s ease-in-out !important;
 }
 
 .contato-icons a:hover {

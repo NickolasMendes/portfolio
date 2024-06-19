@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <a href="#"><img src="/public/img/logo/logo.png" alt=""></a>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
     </header>
 
 
@@ -50,7 +51,7 @@
 
         <div class="descricao" id="sobre">
 
-            <h2 class="underline">Sobre</h2>
+            <h2><span class="green"><</span> Sobre <span class="green">/></span></h2>
 
             <p>Seja <span class="green"> bem-vindo </span> ao meu <span class="green"> MUNDO DIGITAL!</span> </p>
             <p>Sou um apaixonado por códigos e pixels, um criador incansável de <span class="green">soluções</span> para a <span class="green">web</span>. Desde que
@@ -111,108 +112,190 @@
 
         <h2 class="underline">Projetos</h2>
 
-        <div class="projetos">
+        
+        <div class="swiper mySwiper" data-aos="zoom-in-up">
 
-            <div data-aos="fade-up" class="projeto">
+            <div class="projetos swiper-wrapper">
 
-                <div class="projeto-img">
-                    <img src="./public/img/projects/IG.png">
+                <div data-aos="zoom-out-up" class="projeto swiper-slide" >
+
+                    <div class="projeto-img">
+                        <img src="./public/img/projects/IG.png">
+                    </div>
+                    
+                    <div class="projeto-infos">
+
+                        <a target="_blank" href="http://imovelguide.com.br">
+                            <h3>Imovel Guide</h3>
+                            <p>Site para Corretor de Imovéis.</p>
+                        </a>
+
+                        <p>Desenvolvido com: 
+
+                            <div class="linguagem-logo"> 
+                                <a target="_blank" href="https://html.com/document/" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                </a>
+                                
+                                <a target="_blank" href="https://www.w3schools.com/cssref/index.php" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                </a>
+                                
+                                <a target="_blank" href="https://devdocs.io/javascript/" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                </a>
+
+                                <a target="_blank" href="https://laravel.com/docs/11.x" >
+                                    <img src="https://img.icons8.com/?size=100&id=9yPfdIAPFYys&format=png&color=000000" />
+                                </a>
+
+                                <a target="_blank" href="https://dev.mysql.com/doc/" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                                </a>
+
+                            </div>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div data-aos="zoom-out-up" class="projeto swiper-slide">
+                    
+                    <div class="projeto-img">
+                        <img src="./public/img/projects/SG.png">
+                    </div>
+                    
+                    <div class="projeto-infos">
+                    
+                        <a target="_blank" href="https://striker-games.github.io/e-commerce-games/index.html">
+                            <h3>Striker Games</h3>
+                            <p>E-commerce de Jogos Eletrônicos</p>
+                        </a>
+                        <p>Desenvolvido com: 
+                    
+                            <div class="linguagem-logo"> 
+                                <a target="_blank" href="https://html.com/document/" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                </a>
+                                
+                                <a target="_blank" href="https://www.w3schools.com/cssref/index.php" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                </a>
+                                
+                                <a target="_blank" href="https://devdocs.io/javascript/" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                </a>
+
+                            </div>
+                    
+                        </p>
+                    
+                    </div>
+
+                </div>
+
+                <div data-aos="zoom-out-up" class="projeto swiper-slide">
+                    
+                    <div class="projeto-img">
+                        <img src="./public/img/projects/mefoi.png">
+                    </div>
+                    
+                    <div class="projeto-infos">
+                    
+                        <a target="_blank" href="https://mefoi.com/login">
+                            <h3>Mefoi</h3>
+                            <p>Site de notícias</p>
+                        </a>
+                        <p>Desenvolvido com: 
+                    
+                            <div class="linguagem-logo"> 
+                                <a target="_blank" href="https://html.com/document/" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                </a>
+                                
+                                <a target="_blank" href="https://www.w3schools.com/cssref/index.php" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                </a>
+                                
+                                <a target="_blank" href="https://devdocs.io/javascript/" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                </a>
+                                
+                                <a target="_blank" href="https://www.php.net/docs.php" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                                </a>
+
+                            </div>
+                    
+                        </p>
+                    
+                    </div>
+
                 </div>
                 
-                <div class="projeto-infos">
+                <div data-aos="zoom-out-up" class="projeto swiper-slide">
+                    
+                    <div class="projeto-img">
+                        <img src="./public/img/projects/findcel.png">
+                    </div>
+                    
+                    <div class="projeto-infos">
+                    
+                        <a target="_blank" href="https://findcel.com">
+                            <h3>Findcel</h3>
+                            <p>Localizador de dispositivo</p>
+                        </a>
+                        <p>Desenvolvido com: 
+                    
+                            <div class="linguagem-logo"> 
+                                <a target="_blank" href="https://html.com/document/" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                </a>
+                                
+                                <a target="_blank" href="https://www.w3schools.com/cssref/index.php" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                </a>
+                                
+                                <a target="_blank" href="https://devdocs.io/javascript/" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                </a>
+                                
+                                <a target="_blank" href="https://www.php.net/docs.php" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                                </a>
 
-                    <a target="_blank" href="http://imovelguide.com.br">
-                        <h3>Imovel Guide</h3>
-                        <p>Site para Corretor de Imovéis.</p>
-                    </a>
+                            </div>
+                    
+                        </p>
+                    
+                    </div>
 
-                    <p>Desenvolvido com: 
+                </div>
 
-                        <div class="linguagem-logo"> 
-                            <a target="_blank" href="https://html.com/document/" >
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                            </a>
-                            
-                            <a target="_blank" href="https://www.w3schools.com/cssref/index.php" >
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                            </a>
-                            
-                            <a target="_blank" href="https://devdocs.io/javascript/" >
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            </a>
+                <div data-aos="zoom-out-up" class="projeto swiper-slide">
 
-                            <a target="_blank" href="https://laravel.com/docs/11.x" >
-                                <img src="https://img.icons8.com/?size=100&id=9yPfdIAPFYys&format=png&color=000000" />
-                            </a>
+                    <div class="projeto-img">
+                        <img src="./public/img/projects/Aguarde_Em_Breve.png">
+                    </div>
 
-                            <a target="_blank" href="https://dev.mysql.com/doc/" >
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
-                            </a>
-
-                        </div>
-
-                    </p>
+                    <div class="projeto-infos">
+                        <h3>Em Breve mais...</h3>
+                        <p>Estou desenvolvendo...</p>
+                    </div>
 
                 </div>
 
             </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
 
-            <div data-aos="fade-up" class="projeto">
-                
-                <div class="projeto-img">
-                    <img src="./public/img/projects/SG.png">
-                </div>
-                
-                <div class="projeto-infos">
-                
-                    <a target="_blank" href="https://striker-games.github.io/e-commerce-games/index.html">
-                        <h3>Striker Games</h3>
-                        <p>E-commerce de Jogos Eletrônicos</p>
-                    </a>
-                    <p>Desenvolvido com: 
-                
-                        <div class="linguagem-logo"> 
-                            <a target="_blank" href="https://html.com/document/" >
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                            </a>
-                            
-                            <a target="_blank" href="https://www.w3schools.com/cssref/index.php" >
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                            </a>
-                            
-                            <a target="_blank" href="https://devdocs.io/javascript/" >
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            </a>
-
-                        </div>
-                
-                    </p>
-                
-                </div>
-
-            </div>
-
-            <div data-aos="fade-up" class="projeto">
-
-                <div class="projeto-img">
-                    <img src="./public/img/projects/Aguarde_Em_Breve.png">
-                </div>
-
-                <div class="projeto-infos">
-                    <h3>Em Breve...</h3>
-                    <p>Estou desenvolvendo...</p>
-                </div>
-
-            </div>
-
-        </div>
-
+        </div> 
     </section>
    
-
-
-
-
     <section id="contato">
         
         <h2 class="underline">Contatos</h2>
@@ -247,15 +330,31 @@
 
 <script src=".public/js/scripts.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
     AOS.init({
     //   offset: 200,
-    //   delay: 0,
+    //   delay: 1000,
       duration: 1000,
     //   easing: 'ease',
     //   once: false,
     //   mirror: false,
     //   anchorPlacement: 'top-bottom',
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
 </script>
 
