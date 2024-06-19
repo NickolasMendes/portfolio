@@ -16,10 +16,24 @@ body {
 }
 
 
+/* ------------------- Configs Site e Class Gerais --------------------- */
 a {
     text-decoration: none;
-  }
+}
+    
+.green {
+    color: #0dbd16;
+}
+.underline {
+    text-decoration:underline #12e21d;
+}
 
+
+
+
+
+
+/* ------------------- Header --------------------- */
 
 header {
     background: #15251D;
@@ -66,11 +80,9 @@ section {
     margin-bottom: 10rem;
 }
 
-section h1 {
-    margin-bottom: 20px;
+section h2 {
+    margin-bottom: 3rem;
 }
-
-
 
 
 
@@ -79,18 +91,16 @@ section h1 {
 /* ------------------- Sobre --------------------- */
 
 .home {
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 160px;
     display: flex;
     padding: 2.5rem;
-    gap: 200px;
 }
 
 .perfil img {
     border-radius: 50%;
     width: 550px; 
     height: 550px; 
-    margin-right: 100px;
     object-fit: cover;
     box-shadow: 7px 5px 0px 0px #0dbd16;
     transition: transform 0.3s;
@@ -123,12 +133,7 @@ section h1 {
     text-decoration:underline #12e21d;
 }
 
-.green {
-    color: #0dbd16;
-}
-.underline {
-    text-decoration:underline #12e21d;
-}
+
 
 .welcome .social-icons a {
     color: #fff;
@@ -183,50 +188,33 @@ section h1 {
     gap: 2rem;
 }
 
-.experiencia-text {
+.experiencia-card {
     background-color: #f3f3f3;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: -10px 8px 0px #15251D;
-    position: relative;
-    overflow: hidden;
 }
 
-.experiencia-text:hover {
+.experiencia-card:hover {
     box-shadow: -10px 8px 0px #12e21d;
 }
 
 
-.experiencia-text h3 {
-    color: #f8f9fa; /* Cor do texto ajustada */
+.experiencia-card h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    color: #15251D;
     transition: color 0.3s;
 }
 
-.experiencia-text:hover h3 {
+.experiencia-card:hover h3 {
     color: #12e21d;
 }
 
-.experiencia-text p,
-.projeto p {
-    color: #343a40; /* Cor do texto ajustada */
+.experiencia-card p{
+    color: #15251D; 
     line-height: 1.6;
-    transition: color 0.3s;
 }
-
-.experiencia-text h3,
-.projeto h3 {
-    color: #343a40; /* Cor do texto ajustada */
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-
-
-
-
 
 
 
@@ -244,13 +232,11 @@ section h1 {
     background: #f3f3f3;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: -10px 8px 0px rgb(16, 42, 49);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: -10px 8px 0px #15251D;
 }
 
 .projeto:hover {
-    transform: translateY(-10px);
-    box-shadow: -10px 8px 0px rgb(10, 19, 22);
+    box-shadow: -10px 8px 0px #12e21d;
 }
 
 .projeto-img img {
@@ -266,7 +252,6 @@ section h1 {
     padding: 2rem;
 }
 
-
 .linguagem-logo {
     display: flex;
     justify-content: center;
@@ -278,43 +263,78 @@ section h1 {
     padding: 10px;  
 }
 
+.projeto p {
+    color: #343a40; 
+    line-height: 1.6;
+    transition: color 0.3s;
+}
+
+.projeto h3 {
+    color: #343a40; 
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
 
 
 
 
 
 
+/* ------------------- Contato --------------------- */
 
 
-
-/* ------------------- Projeto --------------------- */
-
-#contato a {
-    color: #f8f9fa; /* Cor do texto ajustada */
-    text-decoration: none;
+.contato-text a {
+    color: #f8f9fa;
     font-weight: bold;
-    border-bottom: 2px solid #007bff;
-    transition: color 0.3s, border-bottom-color 0.3s;
+    transition: color .3s;
 }
 
-#contato a:hover {
-    color: #007bff;
-    border-bottom-color: #f8f9fa; /* Cor do texto ajustada */
+.contato-text a:hover {
+    color: #12e21d;
 }
 
+.contato-icons {
+    margin: 3rem auto 0; 
+}
+
+.contato-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.4rem;
+    transition: color .3s;
+}
+
+.contato-icons a:hover {
+    color: #12e21d;
+}
+
+
+
+
+
+
+
+
+/* ------------------- Footer --------------------- */
 
 footer {
-    background: #253745;
-    color: #f8f9fa; /* Cor do texto ajustada */
-    padding: 1rem;
+    background: #15251D;
+    color: #f8f9fa;
+    padding: .4rem;
     text-align: center;
-    transition: background-color 0.5s;
     width: 100%;
 }
 
-footer p {
-    margin-top: 40px;
-}
+
+
+
+
+
+
+
+
+/* ------------------- Responsivo --------------------- */
 
 @media (max-width: 768px) {
     nav ul {
