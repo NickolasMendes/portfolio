@@ -26,7 +26,7 @@ a {
     color: #0dbd16;
 }
 .underline {
-    text-decoration:underline #12e21d;
+    text-decoration:underline #0dbd16;
 }
 
 
@@ -40,7 +40,7 @@ header {
     justify-content: center;
     align-items: center;
     background: #15251D;
-    color: #fff;
+    color: #f8f9fa;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -76,14 +76,15 @@ ul li {
 }
 
 ul li a {
-    color: #f8f9fa; /* Cor do texto ajustada */
+    color: #f8f9fa;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s;    
+    font-size: 18px;
 }
 
 ul li a:hover {
-    color: #12e21d;
+    color: #0dbd16;
 }
 
 
@@ -145,20 +146,20 @@ section h2 {
     font-size: 1.5rem;
     font-weight: normal;
     margin: 0;
-    text-decoration:underline #12e21d;
+    text-decoration:underline #0dbd16;
 }
 
 
 
 .welcome .social-icons a {
-    color: #fff;
+    color: #f8f9fa;
     margin: 0 0.5rem;
     font-size: 1.5rem;
     transition: all .3s ease-in-out !important;
 }
 
 .welcome .social-icons a:hover {
-    color: #12e21d;
+    color: #0dbd16;
 }
 
 
@@ -205,7 +206,7 @@ section h2 {
 }
 
 .experiencia-card {
-    background-color: #f3f3f3;
+    background-color: #f8f9fa;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: -10px 8px 0px #15251D;
@@ -213,7 +214,7 @@ section h2 {
 }
 
 .experiencia-card:hover {
-    box-shadow: -10px 8px 0px #12e21d;
+    box-shadow: -10px 8px 0px #0dbd16;
 }
 
 
@@ -225,7 +226,7 @@ section h2 {
 }
 
 .experiencia-card:hover h3 {
-    color: #12e21d;
+    color: #0dbd16;
 }
 
 .experiencia-card p{
@@ -246,8 +247,8 @@ section h2 {
 }
 
 .projeto {
-    background: #f3f3f3;
-    border: 1px solid #ddd;
+    background: #f8f9fa;
+    border: 1px solid #f8f9fa;
     height: auto;
     margin: 0 50px 40px;
     border-radius: 10px;
@@ -256,7 +257,7 @@ section h2 {
 }
 
 .projeto:hover {
-    box-shadow: -10px 8px 0px #12e21d;
+    box-shadow: -10px 8px 0px #0dbd16;
 }
 
 .projeto-img img {
@@ -303,6 +304,9 @@ section h2 {
 
 /* ------------------- Contato --------------------- */
 
+.contato-text p {
+    font-size: 20px;
+}
 
 .contato-text a {
     color: #f8f9fa;
@@ -311,7 +315,7 @@ section h2 {
 }
 
 .contato-text a:hover {
-    color: #12e21d;
+    color: #0dbd16;
 }
 
 .contato-icons {
@@ -326,7 +330,7 @@ section h2 {
 }
 
 .contato-icons a:hover {
-    color: #12e21d;
+    color: #0dbd16;
 }
 
 
